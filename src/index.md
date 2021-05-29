@@ -1,8 +1,9 @@
 ---
 layout: home
-title: 'Eleventy Duo'
+title: 'Otis Sutton'
 ---
 
-# Hello World
+# Hey there 👋
 
-Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs. Checkout the [project's github repo](https://github.com/yinkakun/eleventy-duo) for more info.
+Personal blog for [Otis Sutton](https://github.com/chopfitzroy) serves as a memory tool for me and hopefully an information source for you! All thoughts are my own.
+

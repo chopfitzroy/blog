@@ -1,14 +1,18 @@
 ---
-title: About Aidan Charles Powell
+title: About Otis Sutton
 layout: about.njk
-name: Aidan Charles Powell
-image: '/images/me.jpeg'
+name: Otis Sutton
+image: '/images/me.jpg'
 ---
 
-Aidan Charles Powell is a 23-year-old health centre receptionist who enjoys watching television, eating out and social media. He is generous and giving, but can also be very rude and a bit lazy.
+Heya, 👋
 
-He is a Jedi who defines himself as straight. He has a degree in medicine. He is a vegetarian. He is obsessed with vintage dresses.
+Formerly Technical Lead at [Fingermark](https://www.fingermark.tech/), now Senior Developer at [Cucumber](https://www.cucumber.co.nz/).
 
-He grew up in a middle class neighbourhood. After his mother died when he was young, he was raised by his father
+I am an open source enthusiast, despite the fact that I need to contribute more 🤖.
 
-He is currently married to Maureen Erika Quinn. Maureen is 13 years older than him and works as a sales assistant.
+I like [Vue](https://vuejs.org/) 💚, [OpenAPI](https://www.openapis.org/) 🔗, and I am currently obsessed with [xState](https://xstate.js.org/) 💙, I also spend a lot of time with [React](https://reactjs.org/) ⚛ and [GraphQL](https://graphql.org/) 🎓 at work.
+
+I am interested in fishing 🎣, reading 📚, hiking 🗻, and gaming 🎮.
+
+If you have any questions or want to get in touch please use the email address listed in my [GitHub bio](https://github.com/chopfitzroy).

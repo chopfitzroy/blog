@@ -1,11 +1,11 @@
 {
-  "name": "Eleventy Duo",
-  "description": "Eleventy Duo is a minimal and beautiful Eleventy theme for personal blogs.",
-  "url": "https://eleventyduo.netlify.app",
+  "name": "Otis Sutton",
+  "description": "The personal blog of Otis Sutton, aka chopfitzroy.",
+  "url": "https://chopfitzroy.dev",
   "author": {
-    "name": "Author Name",
-    "email": "author@site.com",
-    "twitterHandle": "author_handle"
+    "name": "Otis Sutton",
+    "email": "otis@chopfitzroy.dev",
+    "twitterHandle": "ChopFitzroy"
   },
   "defaultSocialImage": "/images/default-social-image.png",
   "headerLinks": [
@@ -22,18 +22,18 @@
   ],
   "socialLinks": [
     {
-      "text": "Instagram",
-      "url": "https://instagram.com/",
-      "external": true
-    },
-    {
       "text": "GitHub",
-      "url": "https://github.com/yinkakun/eleventy-duo",
+      "url": "https://github.com/chopfitzroy",
       "external": true
     },
     {
       "text": "Twitter",
-      "url": "https://twitter.com/",
+      "url": "https://twitter.com/ChopFitzroy",
+      "external": true
+    },
+    {
+      "text": "LinkedIn",
+      "url": "https://www.linkedin.com/in/otiswright/",
       "external": true
     }
   ],
@@ -44,5 +44,5 @@
       "external": true
     }
   ],
-  "showFooterAttribution": true
+  "showFooterAttribution": false
 }
