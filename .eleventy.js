@@ -5,7 +5,11 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const fs = require('fs');
 const path = require('path');
 
+const now = new Date();
+
 const isDev = process.env.APP_ENV === 'development';
+
+const publishedPosts = (post) => post.date <= now && !post.data.draft;
 
 const manifestPath = path.resolve(
   __dirname,
@@ -72,6 +76,12 @@ module.exports = function (eleventyConfig) {
     }
 
     return array.slice(0, n);
+  });
+
+  eleventyConfig.addCollection("posts", (collection) => {
+    return collection
+        .getFilteredByGlob("./src/posts/*.md")
+        .filter(publishedPosts);
   });
 
   eleventyConfig.addCollection('tagList', function (collection) {

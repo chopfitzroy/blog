@@ -14,7 +14,7 @@ Before going any further I would like to thank [Miran Lipovača](https://www.ore
 
 ### History 📜
 
-For those of you who don't know [Haskell](https://www.haskell.org/) is a language with strong roots in academia which has built a community that is both open to exploration and change. This can result in breaking changes and even [halirious bugs](https://gitlab.haskell.org/ghc/ghc/-/issues/163) 😂 but has also allowed the language to avoid some of the anti patterns seen in other mainstream languages. Anti patterns that are unable to be properly addressed given the flow on effect a change like this could have.
+For those of you who don't know [Haskell](https://www.haskell.org/) is a language with strong roots in academia which has built a community that is both open to exploration and change. This can result in breaking changes and even [hilarious bugs](https://gitlab.haskell.org/ghc/ghc/-/issues/163) 😂 but has also allowed the language to avoid some of the anti patterns seen in other mainstream languages. Anti patterns that are unable to be properly addressed given the flow on effect a change like this could have.
 
 One of the original authors of [Haskell](https://www.haskell.org/) [Simon Peyton-Jones](https://www.microsoft.com/en-us/research/people/simonpj/) gave a wonderful [talk on Haskell](https://www.youtube.com/watch?v=re96UgMk6GQ) that does a good job of explaining the projects history and what problems it is trying to solve.
 
