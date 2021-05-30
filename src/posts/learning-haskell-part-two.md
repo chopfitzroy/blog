@@ -3,7 +3,6 @@ title: Learning Haskell Part Two 🎉
 description: Learning the ins and outs of lists in Haskell
 permalink: posts/{{ title | slug }}/index.html
 date: '2021-05-30'
-draft: true,
 tags: [functional, programming, haskell, series]
 ---
 
@@ -50,7 +49,7 @@ When running this I recieved the following error:
 
 After doing a bit of research this looks to be related to the `GHCi` prompt itself and how it displays values, and while there were a few suggestions nothing I tried worked so I moved onto something else (if anyone knows how to resolve this please reach out).
 
-Next I tried changing the command I was using to evaluate the list and print each iteration line by line using `mapM_ putStrLn $ map fizzBuzz [1..100]`, but unfortnately that rendered the following error:
+Next I tried changing the command I was using to evaluate the list and print each iteration line by line using `mapM_ putStrLn $ map fizzBuzz [1..100]`, but unfortunately that rendered the following error:
 
 ```
 • Couldn't match type ‘Either Int String’ with ‘[Char]’
@@ -79,7 +78,7 @@ So very similar to before minus the use of `Either` and casting the final value 
 
 ### Takeaway 🍜
 
-I got excited and tried to jumped straight into [FizzBuzz](https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/) before I had learnt about type signatures or `Either` or even how `GHCi` printed values to the console and I paid for it. Now I learnt loads a long the way and I don't mind this sort of haphazard approach as it helps me to better retain information and challenges my way of thinking. However if you are just starting out I recommend sticking to the order of whatever resource you are using as it doesn't take much to find yourself completely overwhelmed by concepts... 🤯
+I got excited and tried to jumped straight into [FizzBuzz](https://www.tomdalling.com/blog/software-design/fizzbuzz-in-too-much-detail/) before I had learnt about type signatures or `Either` or even how `GHCi` printed values to the console and I paid for it. I learnt loads a long the way and I don't mind this sort of haphazard approach as it helps me to better retain information and challenges my way of thinking. However if you are just starting out I recommend sticking to the order of whatever resource you are using as it doesn't take much to find yourself completely overwhelmed by concepts... 🤯
 
 ### Wrapping up 🎁
 
