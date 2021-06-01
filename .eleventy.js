@@ -11,8 +11,8 @@ const isDev = process.env.APP_ENV === 'development';
 
 const publishedPosts = (post) => {
   if (isDev) return false;
-  if (post.date <= now) return true;
   if (!post.data.draft) return true;
+  if (post.date <= now) return true;
   return false;
 };
 
