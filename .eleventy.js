@@ -9,8 +9,6 @@ const now = new Date();
 
 const isDev = process.env.APP_ENV === 'development';
 
-console.log(JSON.stringify(process.env));
-
 const publishedPosts = (post) => {
   if (isDev) return true;
   if (post.data.draft) return false;
