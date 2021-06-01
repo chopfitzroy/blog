@@ -9,11 +9,13 @@ const now = new Date();
 
 const isDev = process.env.APP_ENV === 'development';
 
+console.log(JSON.stringify(process.env));
+
 const publishedPosts = (post) => {
-  if (isDev) return false;
-  if (post.data.draft) return true;
-  if (post.date <= now) return true;
-  return false;
+  if (isDev) return true;
+  if (post.data.draft) return false;
+  if (post.date >= now) return false;
+  return true;
 };
 
 const manifestPath = path.resolve(
