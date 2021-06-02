@@ -1,6 +1,6 @@
 ---
-title: Functional vs Object Orientated
-description: Functional vs Object Orientated, but with cheesy metaphors to keep everyone happy 😅
+title: Functional versus object orientated
+description: Functional versus object orientated, but with cheesy metaphors to keep everyone happy 😅
 permalink: posts/{{ title | slug }}/index.html
 date: "2021-06-01"
 draft: true
