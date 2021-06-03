@@ -1,0 +1,14 @@
+/* Fix odd overflow bug on mobile */
+.main {
+  width: 100%;
+}
+
+/* Force prism blocks to be spaced further below text */
+pre[class*="language-"] {
+  margin-top: 2rem;
+}
+
+pre code {
+    margin: 0;
+    padding: 0;
+  }

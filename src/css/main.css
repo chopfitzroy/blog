@@ -8,6 +8,7 @@
 @import 'footer.css';
 @import 'post.css';
 @import 'about.css';
+@import 'custom.css';
 
 .layout-wrapper {
   display: grid;
@@ -21,7 +22,6 @@
   flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
-  width: 100%;
   min-width: 0;
   max-width: 48.75rem;
   margin-left: auto;

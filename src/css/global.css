@@ -171,11 +171,6 @@ pre {
   margin-top: 1rem;
 }
 
-/* Force prism blocks to be spaced further below text */
-pre[class*="language-"] {
-  margin-top: 2rem !important;
-}
-
 code,
 kbd {
   color: var(--accent);

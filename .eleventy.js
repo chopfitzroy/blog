@@ -25,9 +25,9 @@ const manifestPath = path.resolve(
 
 const manifest = isDev
   ? {
-      'main.js': '/assets/main.js',
-      'main.css': '/assets/main.css',
-    }
+    'main.js': '/assets/main.js',
+    'main.css': '/assets/main.css',
+  }
   : JSON.parse(fs.readFileSync(manifestPath, { encoding: 'utf8' }));
 
 module.exports = function (eleventyConfig) {
@@ -85,13 +85,13 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addCollection("posts", (collection) => {
     return collection
-        .getFilteredByGlob("./src/posts/*.md")
-        .filter(publishedPosts);
+      .getFilteredByGlob("./src/posts/*.md")
+      .filter(publishedPosts);
   });
 
   eleventyConfig.addCollection('tagList', function (collection) {
     let tagSet = new Set();
-    collection.getAll().forEach(function (item) {
+    collection.getAll().filter(publishedPosts).forEach(function (item) {
       if ('tags' in item.data) {
         let tags = item.data.tags;
 
