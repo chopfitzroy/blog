@@ -3,15 +3,14 @@ title: Functional versus object orientated
 description: Functional versus object orientated, but with cheesy metaphors to keep everyone happy 😅
 permalink: posts/{{ title | slug }}/index.html
 date: "2021-06-01"
-draft: true
 tags: [functional, programming, javascript, feature]
 ---
 
 ### Functional vs. Object Orientated 🏹
 
-Now I want to be clear I am not trying to start a flame war 🔥 becuase if I was I would loose, there are far more people inclined to object orientated programming that there are functional. I am just here to address some common complaints I get from people and talk about how you can get around them 💪.
+Now I want to be clear I am not trying to start a flame war 🔥 because if I was I would lose, there are far more people inclined to object orientated programming that there are functional. I am just here to address some common complaints I get from people and talk about how you can get around them 💪.
 
-The two most common complaints I recieve when trying to convince people to try out a more functional approach is inheritence and state management, which makes total sense those concepts are baked into object orientated programming and there functional counterparts are not immediately obvious 🙄.
+The two most common complaints I recieve when trying to convince people to try out a more functional approach is inheritence and state management, which makes total sense, these concepts are baked into object orientated programming and their functional counterparts are not immediately obvious 🙄.
 
 ### Inheritence 💰
 
@@ -48,7 +47,7 @@ The above is fairly straight forward and easy to follow right? It makes creating
 Now let's look at the functional equivalent:
 
 ```ts
-const makeAnimal = (speak?: (name: string) => string) => (name: string) => {
+const makeEntity = (speak?: (name: string) => string) => (name: string) => {
   if (speak)
     return {
       speak: () => speak(name)
@@ -59,10 +58,10 @@ const makeAnimal = (speak?: (name: string) => string) => (name: string) => {
   };
 };
 
-const makeUnkown = makeAnimal();
-const makeDog = makeAnimal((name: string) => `${name} barks.`);
+const makeAnimal = makeEntity();
+const makeDog = makeEntity((name: string) => `${name} barks.`);
 
-const animal = makeUnkown("Spot");
+const animal = makeAnimal("Spot");
 const dog = makeDog("Lucky");
 
 console.log(animal.speak());
@@ -84,7 +83,7 @@ const bark = (name: string) => `${name} barks.`;
 const makeDog = makeAnimal(bark);
 ```
 
-I know I know, your thinking wait I can do that with an object orientated approach to:
+I know I know, your thinking wait I can do that with an object orientated approach too:
 
 ```ts
 const bark = (name: string) => `${name} barks.`;
@@ -102,7 +101,7 @@ class Dog extends Animal {
 
 And to be fair you can, but because you require a refernce to `this` in order to be able to access your `name` variable the above example suddenly becomes not quite as succinct as its functional counterpart.
 
-Ultimately it is hard to show the value of functional programming in these smaller more trivial examples, especially because of how well object orientated exceels when used in isolation, but trust me once things start to scale up functional proves to be a much more composable and lightweight experience, not to mention a much simpler mental model to follow, once you get used to it 😅.
+Ultimately it is hard to show the value of functional programming in these smaller more trivial examples, especially because of how well object orientated excels when used in isolation, but trust me once things start to scale up functional proves to be a much more composable and lightweight experience, not to mention a much simpler mental model to follow, once you get used to it 😅.
 
 **NOTE:** For the sake of simplicity I am intentionally not typing the return types of these functions, in a real world application I would encourage you to type function return values as well as arguments.
 
@@ -110,7 +109,7 @@ Ultimately it is hard to show the value of functional programming in these small
 
 The elephant 🐘 in the room, state management! This has to be the number one thing I hear when talking to people about functional programming, "how can I keep state if everything is a pure function?" and to be fair the answer isn't one most people want to hear... Recursion.
 
-Wait, wait, wait! It's not as bad as it sounds, recursion doesn't just have to be used for handling the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) it can be used for useful things to, see the below example:
+Wait, wait, wait! It's not as bad as it sounds, recursion doesn't just have to be used for handling the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_number) it can be used for useful things too, see the below example:
 
 ```ts
 class Bottle {
@@ -147,7 +146,7 @@ const gulpedCoke = coke.gulp(50);
 console.log(gulpedCoke.remaining);
 ```
 
-Okay so this one might hurt your head abit, everytime we `gulp` we get a new instance of the bottle? So what's the big deal this time? As far as I'm concerned there is only one major advantage here when using a functional approach versus a more object orientated one and that is visibility. What would happen if I were to ask you what the bottle had lookled like three `gulp`'s ago? With the functional approach it's easy because you have a snapshot of the bottle returned after every `gulp`, but with the object orientated approach you have no idea, once the internal `liquid` is modified it's previous state is lost forever... Now of course if you don't store the returned bottle appropiately or override it my point is effectively redundant but you get the idea 🤯.
+Okay so this one might hurt your head abit, everytime we `gulp` we get a new instance of the bottle? So what's the big deal this time? As far as I'm concerned there is only one major advantage here when using a functional approach versus a more object orientated one and that is visibility. What would happen if I were to ask you what the bottle had looked like three `gulp`'s ago? With the functional approach it's easy because you have a snapshot of the bottle returned after every `gulp`, but with the object orientated approach you have no idea, once the internal `liquid` is modified it's previous state is lost forever... Now of course if you don't store the returned bottle appropiately or override it my point is effectively redundant but you get the idea 🤯.
 
 As far as state management goes you can see it is absolutely achievable using a functional approach you just have to tweak your mental model a bit, I would even go as far as to say the way one manages state using a functional approach is superior to that of an object orientated approach, but that really is asking to start a flame war... 🔥
 
