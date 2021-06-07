@@ -60,6 +60,10 @@ module.exports = function (eleventyConfig) {
       : '';
   });
 
+  eleventyConfig.addFilter('published', (posts) => {
+    return posts.filter(publishedPosts);
+  });
+
   eleventyConfig.addFilter('excerpt', (post) => {
     const content = post.replace(/(<([^>]+)>)/gi, '');
     return content.substr(0, content.lastIndexOf(' ', 200)) + '...';
