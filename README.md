@@ -1,5 +1,3 @@
-# Eleventy Duo
-
 ## Blog 📚
 
 My personal blog, all thoughts are my own 🤣
