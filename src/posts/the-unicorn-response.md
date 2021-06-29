@@ -1,8 +1,8 @@
 ---
 title: The Unicorn Response 🦄
-description: When developers think the problem you are solving is too complicated for traditional design patterns! 🧠
+description: When engineers think the problem they are solving is too complicated for traditional methodologies! 🧠
 permalink: posts/{{ title | slug }}/index.html
-date: "2021-06-27"
+date: "2021-06-29"
 draft: true
 tags: [technique, programming, feature]
 ---
