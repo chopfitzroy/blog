@@ -1,5 +1,5 @@
 ---
-title: The Unicorn Response 🦄
+title: The unicorn response 🦄
 description: When engineers think the problem they are solving is too complicated for traditional methodologies! 🧠
 permalink: posts/{{ title | slug }}/index.html
 date: "2021-06-29"
