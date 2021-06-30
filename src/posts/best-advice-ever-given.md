@@ -1,5 +1,5 @@
 ---
-title: How to give feedback effectively! 🚀
+title: How to give feedback effectively 🚀
 description: Explaining some of my personal experience on when and when not to give feedback. 🎓
 permalink: posts/{{ title | slug }}/index.html
 date: "2021-06-30"
