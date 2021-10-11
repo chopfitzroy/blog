@@ -7,7 +7,7 @@ image: '/images/me.jpg'
 
 Heya, 👋
 
-Formerly Technical Lead at [Fingermark](https://www.fingermark.tech/), now Senior Developer at [Cucumber](https://www.cucumber.co.nz/).
+Software Engineering Lead at [Fingermark](https://www.fingermark.tech/), formerly Senior Developer at [Cucumber](https://www.cucumber.co.nz/).
 
 I am an open source enthusiast, despite the fact that I need to contribute more 🤖.
 
